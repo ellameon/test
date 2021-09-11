@@ -1,22 +1,24 @@
+function firstWordOfString(string) {
+    const firstWordArray = [];
+    const sentenceArray = string.split('.');
 
-
-function getDayOfWeekName(dayNumber) {
-    switch (dayNumber) {
-        case 1:
-            return 'понедельник';
-        case 2:
-            return 'вторник';
-        case 3:
-            return 'среда';
-        case 5:
-            return 'пятница';
-        case 6:
-            return 'суббота';
-        case 7:
-            return 'воскресенье';
-        default:
-            return 'введено неверное число';
+    for (let sentence of sentenceArray) {
+        sentence = sentence.trim();
+        if (sentence.length === 0) {
+            continue
+        }
+        const indexOfSpace = sentence.indexOf(' ');
+        let firstWord
+        if (indexOfSpace === -1) {
+            firstWord = sentence
+        } else {
+            firstWord = sentence.substring(0, indexOfSpace);
+        }
+        firstWordArray.push(firstWord);
     }
+
+    return firstWordArray;
 }
 
-alert(getDayOfWeekName(3))
+const message = prompt();
+alert(firstWordOfString(message).toString());
