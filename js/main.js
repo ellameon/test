@@ -1,20 +1,11 @@
-const name = prompt();
+const n = Number(prompt())
 
-let greet = function (name) {
-    let date = new Date()
+const string = '*'.repeat(n)
 
+console.log(string)
 
-    let hour = date.getHours()
-
-    if (hour < 6) {
-        alert(`доброй ночи ${name}`)
-    } else if (6 <= hour && hour < 12) {
-        alert(`доброе утро ${name}`)
-    } else if (12 <= hour && hour < 18) {
-        alert(`добрый день ${name}`)
-    } else if (18 <= hour && hour < 24) {
-        alert(`добрый вечер ${name}`)
-    }
+for (let i = 0; i < n - 2; i++) {
+    console.log('*' + ' '.repeat(n-2) + '*')
 }
-greet(name)
+console.log(string)
 
