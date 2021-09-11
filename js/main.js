@@ -1,6 +1,6 @@
 
 
-function getDayNumber(dayNumber) {
+function getDayOfWeekName(dayNumber) {
     switch (dayNumber) {
         case 1:
             return 'понедельник';
@@ -19,4 +19,4 @@ function getDayNumber(dayNumber) {
     }
 }
 
-alert(getDayNumber(3))
+alert(getDayOfWeekName(3))
