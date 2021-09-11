@@ -1,24 +1,20 @@
-function firstWordOfString(string) {
-    const firstWordArray = [];
-    const sentenceArray = string.split('.');
+const name = prompt();
 
-    for (let sentence of sentenceArray) {
-        sentence = sentence.trim();
-        if (sentence.length === 0) {
-            continue
-        }
-        const indexOfSpace = sentence.indexOf(' ');
-        let firstWord
-        if (indexOfSpace === -1) {
-            firstWord = sentence
-        } else {
-            firstWord = sentence.substring(0, indexOfSpace);
-        }
-        firstWordArray.push(firstWord);
+let greet = function (name) {
+    let date = new Date()
+
+
+    let hour = date.getHours()
+
+    if (hour < 6) {
+        alert(`доброй ночи ${name}`)
+    } else if (6 <= hour && hour < 12) {
+        alert(`доброе утро ${name}`)
+    } else if (12 <= hour && hour < 18) {
+        alert(`добрый день ${name}`)
+    } else if (18 <= hour && hour < 24) {
+        alert(`добрый вечер ${name}`)
     }
-
-    return firstWordArray;
 }
+greet(name)
 
-const message = prompt();
-alert(firstWordOfString(message).toString());
