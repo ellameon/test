@@ -1,14 +1,22 @@
 
 
-function getGenderString(genderCode) {
-    switch (genderCode.toUpperCase()) {
-        case 'M':
-            return 'Ваш пол мужской';
-        case 'F':
-            return 'Ваш пол женский';
+function getDayNumber(dayNumber) {
+    switch (dayNumber) {
+        case 1:
+            return 'понедельник';
+        case 2:
+            return 'вторник';
+        case 3:
+            return 'среда';
+        case 5:
+            return 'пятница';
+        case 6:
+            return 'суббота';
+        case 7:
+            return 'воскресенье';
         default:
-            return 'Ваш пол неопределен';
+            return 'введено неверное число';
     }
 }
 
-alert(getGenderString('m'))
+alert(getDayNumber(3))
