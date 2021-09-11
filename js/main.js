@@ -1,11 +1,11 @@
-const a = 5;
-const b = 20;
+const name = 'Иван';
+const surname = 'Петров';
+const age = 17;
 
-function multiply(firstNumber, secondNumber) {
-return firstNumber * secondNumber;
+alert(createGreetString(name, surname, age));
+
+function createGreetString (name, surname, age) {
+    return `привет ${name} ${surname} с возрастом ${age} лет `;
 }
-
-
-alert(multiply(a, b));
 
 
