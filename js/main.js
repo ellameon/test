@@ -1,11 +1,14 @@
-const name = 'Иван';
-const surname = 'Петров';
-const age = 17;
 
-alert(createGreetString(name, surname, age));
 
-function createGreetString (name, surname, age) {
-    return `привет ${name} ${surname} с возрастом ${age} лет `;
+function getGenderString(genderCode) {
+    switch (genderCode.toUpperCase()) {
+        case 'M':
+            return 'Ваш пол мужской';
+        case 'F':
+            return 'Ваш пол женский';
+        default:
+            return 'Ваш пол неопределен';
+    }
 }
 
-
+alert(getGenderString('m'))
