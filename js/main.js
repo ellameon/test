@@ -1,12 +1,16 @@
-const n = Number(prompt())
+let age = function () {
 
-const string = '*'.repeat(n)
-
-console.log(string)
-
-for (let i = 0; i < n - 2; i++) {
-    console.log('*' + ' '.repeat(n-2) + '*')
+for (let i = 1; i < 18; i++) {
+    console.log(i + ' ребенок')
 }
-
-console.log(string)
-
+for (let i = 18; i < 30; i++) {
+        console.log(i + ' молодой')
+    }
+for (let i = 30; i < 55; i++) {
+        console.log(i + ' зрелый')
+    }
+for (let i = 55; i < 101; i++) {
+        console.log(i + ' старый')
+    }
+}
+age()
