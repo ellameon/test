@@ -1,16 +1,22 @@
-let menu = {
-    width: 200,
-    height: 300,
-    title: "My menu"
-}
-
-multiplyNumeric(menu)
-
-function multiplyNumeric(obj) {
-    for (let key in obj) {
-        if (typeof obj[key] == 'number') {
-            obj[key] *= 2;
-        }
+let ladder = {
+    step: 0,
+    up() {
+        this.step++;
+        return this;
+    },
+    down() {
+        this.step--;
+        return this;
+    },
+    showStep() {
+        console.log( this.step );
+        return this;
     }
 }
 
+ladder.showStep()
+ladder.up()
+ladder.up()
+ladder.showStep()
+ladder.down()
+ladder.showStep()
