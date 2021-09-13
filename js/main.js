@@ -1,6 +1,18 @@
-const personArray = [{name: 'иван', age: 25}, {name: 'олег', age: 30}, {name: 'андрей', age: 35}]
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130,
+    Mary: 200
+}
 
-const stringArray = firstArray.map((person) => `Имя: ${person.name}, возраст: ${person.age}`)
+let sum = 0;
+for (let key in salaries) {
+    sum += salaries[key]
+    if (salaries[key] === 0) {
+        sum = 0
+}
 
-console.log(stringArray)
+}
+console.log(sum)
+
 
