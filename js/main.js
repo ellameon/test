@@ -1,16 +1,16 @@
-let age = function () {
+const name = prompt('введите имя')
+const age = prompt('возраст')
 
-for (let i = 1; i < 18; i++) {
-    console.log(i + ' ребенок')
+let personDesc = function (name, age) {
+    if (1 <= age && age <= 17) {
+        console.log(`${name} имеет возраст ${age} и он ребенок`)
+    }
+    else if (18 <= age && age <= 30)
+        console.log(`${name} имеет возраст ${age} и он молодой`)
+    else if (31 <= age && age <= 55)
+        console.log(`${name} имеет возраст ${age} и он взрослый`)
+    else if (56 <= age && age <= 100)
+        console.log(`${name} имеет возраст ${age} и он старый`)
 }
-for (let i = 18; i < 30; i++) {
-        console.log(i + ' молодой')
-    }
-for (let i = 30; i < 55; i++) {
-        console.log(i + ' зрелый')
-    }
-for (let i = 55; i < 101; i++) {
-        console.log(i + ' старый')
-    }
-}
-age()
+
+personDesc(name, age)
