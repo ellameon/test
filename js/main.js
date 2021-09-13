@@ -1,10 +1,12 @@
 
 
 
-let Integers = [4, 2, 20, 8, 10]
+let Integers = [4, 2, 21, 8, 10, 23, 40]
 let result = false
 for (let i in Integers)
-result = Integers[i] % 2 === 0;
+    if (Integers[i] % 2 !== 0) {
+    result = true
+}
 
-alert(result)
+console.log(result)
 
