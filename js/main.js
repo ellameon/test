@@ -1,13 +1,6 @@
-const arr = [6, 2, 4, 12, 8, 20, 26, 30, 40, 80];
+const personArray = [{name: 'иван', age: 25}, {name: 'олег', age: 30}, {name: 'андрей', age: 35}]
 
-function moveElement(arr,from,to) {
-    arr.splice(to,0,arr.splice(from,1)[0])
-    return arr
-}
+const stringArray = firstArray.map((person) => `Имя: ${person.name}, возраст: ${person.age}`)
 
-
-console.log(moveElement(arr,0,arr.length));
-
-
-
+console.log(stringArray)
 
