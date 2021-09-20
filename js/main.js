@@ -1,16 +1,15 @@
-//Выводим кнопку с текстом "Поменять" и два инпута,
-// при клике на кнопку инпуты меняются своим введеным текстом
+//Выводим две кнопки "заблокировать" и "разблокировать" и инпут.
+//Одна из них блокирует инпут с помощью атрибута disabled, а другая разблокирует
 
-function changeInputs() {
-    let input1 = document.getElementById('input1')
-    let input2 = document.getElementById('input2')
-
-    const input1Value = input1.value
-    input1.value = input2.value
-    input2.value = input1Value
+function block() {
+    let input = document.getElementById('input')
+    input.disabled = true
     }
 
-
+function unblock() {
+    let input = document.getElementById('input')
+    input.disabled = false
+}
 
 
 
