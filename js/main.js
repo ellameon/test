@@ -1,16 +1,16 @@
-//Выводим кнопку и инпут, в инпуте можно ввести любой и текст и при нажатии на кнопку,
-// выводится алерт с текстом "Вы ввели 'текст инпута'" или "Вы ничего не ввели в поле".
+//Выводим кнопку с текстом "Поменять" и два инпута,
+// при клике на кнопку инпуты меняются своим введеным текстом
 
-function alertAfterClick() {
-    let input = document.getElementById('test')
-    if (input.value !== '') {
-        alert(`Вы ввели ${input.value}`)
-    } else {
-        alert(`Вы ничего не ввели в поле`)
+function changeInputs() {
+    let input1 = document.getElementById('input1')
+    let input2 = document.getElementById('input2')
+
+    const input1Value = input1.value
+    input1.value = input2.value
+    input2.value = input1Value
     }
 
 
 
 
 
-}
