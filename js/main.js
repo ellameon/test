@@ -1,6 +1,16 @@
-//Выводим кнопку с текстом "Заполнить" и незаполненный инпут, при клике на кнопку, заполняем инпут текстом "test@email.ru"
+//Выводим кнопку и инпут, в инпуте можно ввести любой и текст и при нажатии на кнопку,
+// выводится алерт с текстом "Вы ввели 'текст инпута'" или "Вы ничего не ввели в поле".
 
-function buttonClick () {
-    let input = document.getElementById('fill');
-    input.value = 'test@email.ru'
+function alertAfterClick() {
+    let input = document.getElementById('test')
+    if (input.value !== '') {
+        alert(`Вы ввели ${input.value}`)
+    } else {
+        alert(`Вы ничего не ввели в поле`)
+    }
+
+
+
+
+
 }
