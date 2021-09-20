@@ -1,2 +1,6 @@
-//Вывести кнопку с текстом "Привет", при нажатии на неё выводим alert c текстом "Привет Мир!"
+//Выводим кнопку с текстом "Заполнить" и незаполненный инпут, при клике на кнопку, заполняем инпут текстом "test@email.ru"
 
+function buttonClick () {
+    let input = document.getElementById('fill');
+    input.value = 'test@email.ru'
+}
